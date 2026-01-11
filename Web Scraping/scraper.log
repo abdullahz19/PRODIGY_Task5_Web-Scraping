@@ -1,0 +1,12 @@
+2026-01-11 01:12:36,062 - INFO - Fetching URL: https://books.toscrape.com/
+2026-01-11 01:12:41,282 - INFO - Page fetched successfully
+2026-01-11 01:12:41,540 - INFO - Found 20 product(s)
+2026-01-11 01:12:41,642 - INFO - Successfully extracted 20 product(s)
+2026-01-11 01:12:41,697 - INFO - Data exported successfully to books_products.csv
+2026-01-11 01:12:41,702 - INFO - Total products exported: 20
+2026-01-11 01:14:47,814 - INFO - Fetching URL: https://books.toscrape.com/
+2026-01-11 01:14:51,293 - INFO - Page fetched successfully
+2026-01-11 01:14:51,530 - INFO - Found 20 product(s)
+2026-01-11 01:14:51,570 - INFO - Successfully extracted 20 product(s)
+2026-01-11 01:14:51,601 - INFO - Data exported successfully to books_products.csv
+2026-01-11 01:14:51,604 - INFO - Total products exported: 20

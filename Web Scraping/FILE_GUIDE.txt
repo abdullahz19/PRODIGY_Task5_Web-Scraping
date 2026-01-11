@@ -1,0 +1,272 @@
+"""
+FILE DIRECTORY AND PURPOSE GUIDE
+=================================
+
+This document explains what each file does and how to use them.
+"""
+
+FILES_GUIDE = """
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    WEB SCRAPER - FILE DIRECTORY GUIDE                        ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📁 MAIN LIBRARY (Core Code)
+════════════════════════════════════════════════════════════════════════════════
+
+📄 scraper.py
+   - Main scraper module with all core functionality
+   - Contains: WebScraper class, CSVExporter class, helper functions
+   - DO NOT EDIT unless you know what you're doing
+   - Import this in your own scripts: from scraper import WebScraper
+   - ~300 lines of well-documented code
+
+
+🚀 EXECUTABLE SCRIPTS (Run These!)
+════════════════════════════════════════════════════════════════════════════════
+
+📄 run.bat (Windows only)
+   Purpose: Easy launcher with menu interface
+   How to use: Double-click or run: run.bat
+   What it does: 
+     - Creates/activates virtual environment
+     - Installs packages
+     - Shows menu to run examples
+
+📄 quickstart.py
+   Purpose: Quick test to verify everything works
+   How to use: python quickstart.py
+   What it does:
+     - Tests scraping with books.toscrape.com
+     - Creates books_products.csv
+     - Shows first 5 products
+     - Great first test!
+
+📄 examples.py
+   Purpose: Interactive examples with explanations
+   How to use: python examples.py
+   What it does:
+     - Interactive menu (1-4 options)
+     - Example 1: Basic scraping with books site
+     - Example 2: Custom website template
+     - Example 3: Multi-page scraping
+     - Example 4: CSS selector finding guide
+
+📄 test_scraper.py
+   Purpose: Verify all components work
+   How to use: python test_scraper.py
+   What it does:
+     - Tests page fetching
+     - Tests product extraction
+     - Tests CSV export
+     - Shows sample output
+
+
+📚 DOCUMENTATION & GUIDES
+════════════════════════════════════════════════════════════════════════════════
+
+📄 README.md (START HERE!)
+   - Complete project documentation
+   - Installation instructions
+   - API reference
+   - Troubleshooting guide
+   - Best practices
+   - Open with: Any text editor or view in GitHub
+
+📄 STARTUP_GUIDE.txt (READ FIRST!)
+   - Getting started guide
+   - 3-step quick start
+   - File descriptions
+   - Learning path
+   - Quick reference
+
+📄 CONFIGURATION_GUIDE.py
+   - Step-by-step guide to finding CSS selectors
+   - How to use browser inspector
+   - Common selector patterns
+   - Testing selectors in console
+   - Troubleshooting tips
+   - Run with: python CONFIGURATION_GUIDE.py
+
+📄 website_configs.py
+   - Pre-configured examples for popular websites
+   - books.toscrape.com (recommended)
+   - Amazon, eBay, Walmart examples
+   - Copy-paste ready configurations
+   - View with: python website_configs.py or text editor
+
+
+⚙️  CONFIGURATION FILES
+════════════════════════════════════════════════════════════════════════════════
+
+📄 requirements.txt
+   - List of Python packages needed
+   - Install with: pip install -r requirements.txt
+   - Packages:
+     * requests - for fetching web pages
+     * beautifulsoup4 - for parsing HTML
+     * pandas - for CSV operations
+     * lxml - for HTML parsing
+
+
+📁 SYSTEM FOLDERS (Auto-generated)
+════════════════════════════════════════════════════════════════════════════════
+
+📂 .venv/
+   - Virtual environment folder
+   - Auto-created by Python
+   - Contains isolated Python installation
+   - Do not edit or delete
+
+📂 __pycache__/
+   - Python compiled files (auto-generated)
+   - Safe to delete
+   - Will be recreated automatically
+
+
+📄 AUTO-GENERATED OUTPUT FILES
+════════════════════════════════════════════════════════════════════════════════
+
+📄 *.csv (various filenames)
+   - Output files from scraping
+   - Examples: products.csv, books_products.csv, all_books.csv
+   - Open with: Excel, Google Sheets, or text editor
+   - Auto-created by CSVExporter.export()
+
+📄 scraper.log
+   - Log file with all operations
+   - Created automatically on first run
+   - Shows debug info, warnings, errors
+   - View with: type scraper.log (Windows) or cat scraper.log (Mac/Linux)
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                            QUICK START WORKFLOW                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Step 1: ACTIVATE ENVIRONMENT
+  Windows:   .venv\\Scripts\\activate
+  Mac/Linux: source venv/bin/activate
+
+Step 2: RUN TEST
+  python quickstart.py
+
+Step 3: VIEW RESULTS
+  - Check console output
+  - Open books_products.csv in Excel
+  - Check scraper.log for details
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                         FILE USAGE BY PURPOSE                                ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+If you want to...              Use this file...
+────────────────────────────────────────────────────────────────────────────────
+Get started quickly            → STARTUP_GUIDE.txt
+Learn project structure        → This file (FILE_GUIDE.txt)
+Understand full capabilities   → README.md
+Test everything works          → python quickstart.py
+See interactive examples       → python examples.py
+Find CSS selectors             → CONFIGURATION_GUIDE.py
+Use pre-made configs           → website_configs.py
+Use in your own code           → from scraper import WebScraper
+Check what went wrong          → scraper.log
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                          FILE SIZE REFERENCE                                 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+scraper.py               ~300 lines  (Core library - don't modify)
+README.md                ~500 lines  (Full documentation)
+examples.py              ~200 lines  (Interactive examples)
+website_configs.py       ~250 lines  (Website configurations)
+quickstart.py            ~60 lines   (Quick test)
+test_scraper.py          ~50 lines   (Verification test)
+CONFIGURATION_GUIDE.py   ~150 lines  (Selector guide)
+STARTUP_GUIDE.txt        ~400 lines  (Getting started)
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                            READING ORDER                                     ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+For New Users:
+  1. STARTUP_GUIDE.txt         (overview and quick start)
+  2. README.md                 (detailed documentation)
+  3. examples.py               (see it in action)
+  4. CONFIGURATION_GUIDE.py    (learn to configure)
+
+For Experienced Users:
+  1. website_configs.py        (copy what you need)
+  2. scraper.py                (understand internals)
+  3. examples.py               (advanced patterns)
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                           DEPENDENCIES                                       ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Python Files Import Chain:
+  scraper.py (imports: requests, bs4, pandas)
+      ↓
+  All other scripts import from scraper.py
+
+
+External Packages (from requirements.txt):
+  - requests      → Fetch web pages
+  - beautifulsoup4 → Parse HTML
+  - pandas        → CSV operations
+  - lxml          → HTML parser
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                        IMPORTANT NOTES                                       ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+1. NEVER Edit scraper.py unless you know Python very well
+2. ALWAYS check robots.txt before scraping a website
+3. ALWAYS add delays between requests (time.sleep(2))
+4. CSV output files are created in the same folder by default
+5. Logs are saved to scraper.log for debugging
+6. All scripts assume Python 3.8+ is installed
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                      WHERE TO FIND THINGS                                    ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+How to scrape a website?
+  → Read: CONFIGURATION_GUIDE.py, then look at examples.py
+
+What classes and functions are available?
+  → Read: README.md (API Reference section)
+
+Which pre-configured websites are available?
+  → Check: website_configs.py
+
+How do I find CSS selectors?
+  → See: CONFIGURATION_GUIDE.py or README.md
+
+I got an error - what do I do?
+  → 1) Check scraper.log
+     2) Read README.md Troubleshooting section
+     3) Review the error in the console
+
+Example code for my website?
+  → Look in: website_configs.py or examples.py
+
+Is it okay to scrape this website?
+  → Check: https://website.com/robots.txt
+     Read: Website's Terms of Service
+
+
+════════════════════════════════════════════════════════════════════════════════
+That's everything! You're ready to start scraping!
+
+Next step: Read STARTUP_GUIDE.txt and run: python quickstart.py
+════════════════════════════════════════════════════════════════════════════════
+"""
+
+if __name__ == "__main__":
+    print(FILES_GUIDE)
